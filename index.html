@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelly</title>
+
+    <style>
+    body {
+        background-color: rgb(54, 2, 61); 
+        margin: 0; 
+        padding: 0;
+        color: #fff; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+
+    .m_grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 5px; 
+        padding: 10px;
+    }
+
+    .m_grid-item {
+        background-color: rgb(54, 2, 61);
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        position: relative; 
+    }
+
+   
+    .m_grid-item img {
+        max-width: 100%;
+        height: 400px;
+    }
+
+    picture {
+    position: relative;
+}
+
+picture > figcaption {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    color: rgb(54, 2, 61);
+    padding: 10px 15px;
+    opacity: 0;
+    transition: opacity 300ms, left 300ms;
+}
+
+picture:hover > figcaption {
+    opacity: 1;
+    left: 15px;
+}
+
+    .center-text {
+        text-align: center;
+        padding-top: 15pxs;
+    }
+
+    .container{
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+
+    #fotoPerfil img{
+        border-radius: 70px;
+        margin-top: 20px;
+        border: 1px solid white;
+    }
+h1{
+    text-transform: uppercase;
+    padding: 30px;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+    <div class="center-text">
+        <div id="fotoPerfil">
+            <img src="https://media.licdn.com/dms/image/D4D03AQGBWudKy3A0gg/profile-displayphoto-shrink_400_400/0/1680634627946?e=1715817600&v=beta&t=0uxbxPqcW6D68aGKqHBSwYypC0Db7Thl5ph2S2YySro" height="250px" alt="Foto de Marcelly" >
+       </div>
+        <h1>Marcelly Ferreira</h1>
+        <h3>Prazer, sou a Marcelly, estudante de Análise e Desenvolvimento de Sistemas na Una e estagiária no setor de robótica da SEMED de Betim. Sempre tive curiosidade de aprender a criar sistemas tecnológicos e inovadores, por isso almejo conquistar meu lugar no mercado de TI, atualmente estou focando meus estudos na área de desenvolvimento Front-End e UX/UI design.</h3>
+    </div>
+<hr>
+    <div class="center-text">
+        <h1>Lugares que quero conhecer</h1>
+    </div>
+
+    <div class="m_grid-container">
+        <div class="m_grid-item">
+            <picture>
+               <a href="nova york.html"> <img src="imagens/56c302a98386f1698a0ea023bd776e5c.jpg"> </a>
+                <figcaption>
+                  <span>Nova York</span>
+                </figcaption>
+              </picture>
+        </div>
+
+        <div class="m_grid-item">
+            <picture>
+                <a href="canada.html"><img src="imagens/6b5ffb42955479fcc2e7371d3edc1b7f.jpg"></a>
+                <figcaption>
+                  <span>Canadá</span>
+                </figcaption>
+              </picture>
+        </div>
+
+        <div class="m_grid-item">
+            <picture>
+                <a href="finlândia.html"><img src="imagens/download.jpg"></a>
+                <figcaption>
+                  <span>Finlândia</span>
+                </figcaption>
+              </picture>
+        </div>
+
+        <div class="m_grid-item">
+            <picture>
+                <a href="bariloche.html"><img src="imagens/26f4aa12fdacf9a13148fa4fae99ec16.jpg"></a>
+                <figcaption>
+                  <span>Bariloche</span>
+                </figcaption>
+              </picture>
+        </div>
+
+        <div class="m_grid-item">
+            <picture>
+                <a href="paris.html"><img src="imagens/1aeabd7154042aa3697776557af2b725.jpg"></a>
+                <figcaption>
+                  <span>Paris</span>
+                </figcaption>
+              </picture>
+        </div>
+
+        <div class="m_grid-item">
+            <picture>
+                <a href="londres.html"><img src="imagens/2576c9e0f9bd9b71ddcc9572893e1569.jpg"></a>
+                <figcaption>
+                  <span>Londres</span>
+                </figcaption>
+              </picture>
+        </div>
+        
+    </div>
+
+    <footer class="center-text">
+        <h2>Página da Marcelly, desenvolvida na aula de 13/03</h2>
+    </footer>
+</div>
+</body>
+</html>
