@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelly</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+   
+    <style>
+    body {
+    background-color: rgb(54, 2, 61);
+    margin: 0;
+    padding: 0;
+    color: rgb(16, 16, 16);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.center-text {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.container {
+    padding: 50px;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.comments-section {
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000055;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.comments-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    color: #000; /* Cor do texto dos comentários */
+}
+
+#comment-form {
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000055;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.textfield {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Cor do texto dos labels */
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    background: #fff; /* Fundo branco para os inputs de texto */
+    border-radius: 8px;
+    padding: 5px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total do input */
+    border: 1px solid #ccc;
+    outline: none; /* Remove a borda de foco ao clicar */
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #2c253c;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px -12px #00ff807e;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo no hover */
+}
+
+button:hover {
+    background-color: #f0f0f0; /* Cor de fundo no hover */
+    color: #28292b; /* Cor do texto no hover */
+}
+
+
+
+</style> 
+
+<div class="container">
+    <div class="center-text">
+            <figure>
+            <img src="imagens/6b5ffb42955479fcc2e7371d3edc1b7f.jpg" alt="">
+            <figcaption>Paris</figcaption>  
+    </figure>
+</div>
+        
+<hr>
+
+
+<div class="comments-section">
+        <h2 class="comments-title">Comentários publicados</h2>
+        <div id="comments-container">
+            <!-- Comentários serão exibidos aqui -->
+        </div>
+    </div>
+
+    <form id="comment-form">
+    <div class="textfield">
+        <label for="name"> Nome</label>
+        <input type="text" name="name" id="comment-name" placeholder="Qual o seu nome?">
+    </div>
+
+    <div class="textfield">
+        <label for="comment"> Comentário</label>
+        <input type="text" name="comment" id="comment-text" placeholder="Digite seu comentário...">
+    </div>
+
+        <button type="submit">Publicar</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>   
